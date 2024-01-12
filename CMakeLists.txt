@@ -109,6 +109,7 @@ if (WITH_TESTING)
         string(REPLACE ".py" "" TEST_OPS "${TEST_OPS}")
         foreach(src ${TEST_OPS})
             py_test(${src} SRCS ${src}.py ENVS ${PADDLE_PYTHON_PATH})
+           
         endforeach()
     endif()
 endif()
